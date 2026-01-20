@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #000000;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .header .search {
+      font-size: 18px;
+      color: #666;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+    }
+    .video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .video-controls {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+    }
+    .video-controls .play-pause {
+      font-size: 24px;
+    }
+    .video-controls .time {
+      font-size: 18px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+    }
+    .footer .icon {
+      font-size: 24px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"style="color: #fff;">TikTok</div>
+      <div class="search">🔍</div>
+    </div>
+    <div class="video-container">
+      <video class="video" src="/storage/emulated/0/site/vídeo/rola.mp4" loop muted></video>
+      <div class="video-controls">
+        <div class="play-pause">▶️</div>
+        <div class="time">0:00 / 3:00</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="icon">🏠</div>
+      <div class="icon">🔍</div>
+      <div class="icon">📸</div>
